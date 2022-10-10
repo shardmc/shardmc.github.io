@@ -13,36 +13,28 @@
     
     <meta name="google-site-verification" content="aRxGCMha-zKKFyM6KT9PCfu0o4kVaoYIFQDijxiq9PI" />
 
-    <link rel="stylesheet" href="dist/output.css"/>
+    <link rel="stylesheet" href="css/tailwind.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <link rel="preload" as="image" href="assets/logo/logo.png">
+    <link rel="preload" as="image" href="assets/components/wave.svg">
+    <link rel="preload" as="image" href="assets/components/wave2.svg">
+    
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
-    <style>
-      .gradient {
-        background: linear-gradient(90deg, #0a5060 0%, #034150 100%)
-      }
-
-      .navbar {
-        background-color: linear-gradient(90deg, #0a5060 0%, #034150 100%);
-      }
-
-      .navbar_dark {
-        transition: background-color 0.5s;
-        background-color: #0F172A;
-      }
-    </style>
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-    <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white navbar">
+    <nav id="header" class="fixed w-full z-30 top-0 text-white navbar-light">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="pl-4 flex space-x-2">
-          <img src="dist/logo.png" class="h-8 fill-current inline" />
+        <div class="pl-4 flex space-x-2 items-center">
+          <img src="assets/logo/logo.png" class="h-10 inline pixel-art" />
           <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
             SHARDMC
           </a>
         </div>
         <div class="block lg:hidden pr-4">
           <button id="nav-toggle" class="flex items-center p-1 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            <img src="dist/menu.svg" class="fill-current h-6 w-6" />
+            <img src="assets/icons/menu.svg" class="fill-current h-6 w-6" />
           </button>
         </div>
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
@@ -66,14 +58,12 @@
           </button>
         </div>
       </div>
-      <!--<hr class="border-b border-gray-100 opacity-25 my-0 py-0" />-->
     </nav>
 
     <div class="pt-24">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-        <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p id="splash" class="uppercase tracking-loose w-full">. . .</p>
+          <p id="splash" class="uppercase italic tracking-loose w-full reveal"> </p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
             ShardMC
           </h1>
@@ -81,19 +71,16 @@
           <p class="leading-normal text-2xl mb-8">
             A highly-customizable Minecraft Server
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+
+          <button class="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-7 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Downloads
           </button>
         </div>
-        <!--Right Col-->
-        <!--<div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src="logo_big.png" />
-        </div>-->
       </div>
     </div>
 
     <div class="relative">
-      <img src="dist/wave.svg" />
+      <img src="assets/components/wave.svg" />
     </div>
 
     <section class="bg-slate-900 py-8">
@@ -112,12 +99,12 @@
             </p>
           </div>
           <div class="w-full sm:w-1/2 p-6">
-            <img src="dist/fast.svg" class="w-full sm:h-64 mx-auto" />
+            <img src="assets/artwork/fast.svg" class="w-full sm:h-64 mx-auto" />
           </div>
         </div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
           <div class="w-full sm:w-1/2 p-6 mt-6">
-            <img src="dist/stats.svg" class="w-5/6 sm:h-64 mx-auto" />
+            <img src="assets/artwork/stats.svg" class="w-5/6 sm:h-64 mx-auto" />
           </div>
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
@@ -200,10 +187,8 @@
         </div>
       </div>
     </section>
-
-    <!-- donations -->
     
-    <img src="dist/wave2.svg" />
+    <img src="assets/components/wave2.svg" />
     <section class="container mx-auto text-center py-6 mb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
         Try it Out!
@@ -223,7 +208,7 @@
       <div class="container mx-auto px-8">
         <div class="w-full flex flex-col md:flex-row py-6">
           <div class="flex mb-6 text-black space-x-2">
-            <img src="dist/logo.png" class="h-8 fill-current inline" />
+            <img src="assets/logo/logo.png" class="h-8 fill-current inline pixel-art" />
             <a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
               SHARDMC
             </a>
@@ -265,88 +250,8 @@
       </div>
     </footer>
 
-    <script>
-      var scrollpos = window.scrollY;
-      var header = document.getElementById("header");
-      var navcontent = document.getElementById("nav-content");
-      var navaction = document.getElementById("navAction");
-      var brandname = document.getElementById("brandname");
-      var toToggle = document.querySelectorAll(".toggleColour");
-
-      document.addEventListener("scroll", function () {
-        scrollpos = window.scrollY;
-        console.log(scrollpos);
-        if (scrollpos > 355) {
-          header.classList.add("navbar_dark");
-          header.classList.remove("gradient");
-
-          navaction.classList.remove("bg-black");
-          header.classList.add("shadow");
-        } else {
-          header.classList.remove("navbar_dark");
-          header.classList.add("gradient");
-
-          navaction.classList.add("bg-black");
-          header.classList.remove("shadow");
-        }
-      });
-    </script>
-
-    <script>
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
-
-      document.onclick = check;
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
-
-        if (!checkParent(target, navMenuDiv)) {
-          if (checkParent(target, navMenu)) {
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv.classList.remove("hidden");
-            } else {
-              navMenuDiv.classList.add("hidden");
-            }
-          } else {
-            navMenuDiv.classList.add("hidden");
-          }
-        }
-      }
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
-        }
-        return false;
-      }
-    </script>
-
-    <script>
-      motd = [
-        "As seen on TV!",
-        "Awesome!",
-        "100% pure!",
-        "May contain nuts!",
-        "More polygons!",
-        "Moderately attractive!",
-        "Limited edition!",
-        "Flashing letters!",
-        "It's here!",
-        "Best in class!",
-        "It's finished!",
-        "Kind of dragon free!",
-        "When it's finished!",
-        "Excitement!",
-        "More than 500 sold!",
-        "One of a kind!",
-        "Heaps of hits on YouTube!"
-      ];
-
-      text = motd[Math.floor(Math.random() * motd.length)];
-      document.title = "ShardMC - " + text;
-      document.getElementById("splash").innerHTML = "\"" + text + "\"";
-    </script>
+    <script src="js/motd.js"></script>
+    <script src="js/nav-scrolling.js"></script>
+    <script src="js/nav-drop-down.js"></script>
   </body>
 </html>
