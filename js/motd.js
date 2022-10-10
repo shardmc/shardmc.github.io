@@ -287,7 +287,7 @@ motd = [
 "Who put it there?",
 "You can't explain that!",
 "if not ok then return end",
-"§1C§2o§3l§4o§5r§6m§7a§8t§9i§ac",
+"<font color=\"#0000AA\">C</font><font color=\"#00AA00\">O</font><font color=\"#00AAAA\">L</font><font color=\"#AA0000\">O</font><font color=\"#AA00AA\">R</font><font color=\"#FFAA00\">M</font><font color=\"#AAAAAA\">A</font><font color=\"#555555\">T</font><font color=\"#5555FF\">I</font><font color=\"#55FF55\">C</font>",
 "§kFUNKY LOL",
 "Big Pointy Teeth!",
 "Bekarton guards the gate!",
