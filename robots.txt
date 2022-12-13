@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /norobots/
-Sitemap: https://shardmc.github.io/sitemap.xml
